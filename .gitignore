@@ -1,0 +1,106 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# WordPress core
+wp-config.php
+wp-config-local.php
+wp-config-*.php
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/wp-cache-config.php
+wp-content/backupwordpress-*
+wp-content/ai1wm-backups/
+wp-content/updraft/
+wp-content/w3tc-config/
+wp-content/nginx-helper/
+wp-content/backup-db/
+wp-content/plugins/hello.php
+
+# WooCommerce specific
+wp-content/plugins/woocommerce/
+wp-content/wc-logs/*.log
+wp-content/wc-logs/*.log.*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE specific files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Docker
+.docker-sync/
+.docker/
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Node dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Composer
+/vendor/
+composer.lock
+
+# Debug logs
+debug.log
+
+# Local development
+wp-data/
+
+# Backup files
+*.bak
+*.swp
+*~.nib
+
+# Dependency directories
+bower_components/
+
+# WordPress core (should not be tracked in version control)
+/wp-admin/
+/wp-includes/
+/wp-*.php
+/index.php
+/license.txt
+/readme.html
+/xmlrpc.php
+
+# WordPress data directory (Docker volume)
+wp_data/
+
+# WordPress Multisite
+wp-content/*.log
+wp-content/wp-cache/
+wp-content/upgrade-temp-backup/
+
+# Ignore all files in wp-content except themes and plugins
+wp-content/*
+!wp-content/plugins/
+!wp-content/themes/
+
+# Ignore all themes except your custom theme
+wp-content/themes/*
+!wp-content/themes/your-theme-name/
+
+# Ignore all plugins except your custom plugins
+wp-content/plugins/*
+!wp-content/plugins/your-plugin-name/
