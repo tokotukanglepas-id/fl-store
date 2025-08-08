@@ -39,7 +39,8 @@ services:
             define('WP_SITEURL', 'https://avertguard.com');
         }
         define('FORCE_SSL_ADMIN', true);
-        if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
+        $http_x_forwarded_proto = $_SERVER['HTTP_X_FORWARDED_PROTO'] ?? '';
+        if ($http_x_forwarded_proto === 'https') {
             $_SERVER['HTTPS'] = 'on';
         }
     volumes:
